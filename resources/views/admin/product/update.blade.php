@@ -11,6 +11,7 @@
                 <div class="p-6 text-gray-900">
                     <h1 class="mb-0">Edit Product</h1>
                     <hr>
+                    <p><a href="{{route('admin/products')}}" class="btn btn-danger">Back</a></p>
                     <form action="{{route('admin/products/edit', $products->id)}}" method="POST">
                         @csrf
                         @method('PUT')
